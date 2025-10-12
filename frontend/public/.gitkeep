@@ -1,0 +1,9 @@
+# Keep this directory in git
+
+This directory is for storing public static assets like:
+- Favicon
+- Robots.txt
+- Manifest files
+- Other public assets
+
+Currently empty - ready for your public assets!
