@@ -174,7 +174,7 @@ Current emergency solutions in tourist areas are often slow, fragmented, and dif
 <p>The IEADS repository is organized into five primary layers: Firmware, Backend, Frontend, Hardware, and Documentation to ensure modularity and scalability.</p>
 
 <pre>
-/
+
 ├── .github/                   # Configuration for GitHub workflows (CI/CD, auto-labeling, etc.)
 │   ├── ISSUE_TEMPLATE/        # Templates for bug reports and feature requests
 │   └── PULL_REQUEST_TEMPLATE  # Template for pull requests
