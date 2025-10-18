@@ -1,0 +1,375 @@
+.about-page {
+  min-height: 100vh;
+  background: var(--dark-bg);
+}
+
+/* Hero Section */
+.about-hero {
+  padding: 8rem 2rem 6rem;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(0, 200, 83, 0.1), rgba(33, 150, 243, 0.1));
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+}
+
+/* Container */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Mission & Vision */
+.mission-vision {
+  padding: 6rem 0;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+}
+
+.mission-card,
+.vision-card {
+  background: var(--card-bg);
+  padding: 3rem;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.mission-card:hover,
+.vision-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px var(--card-shadow);
+}
+
+.card-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.mission-card h2,
+.vision-card h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.mission-card p,
+.vision-card p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+/* Core Values */
+.core-values {
+  padding: 6rem 0;
+  background: rgba(0, 200, 83, 0.02);
+}
+
+.section-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 4rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.value-card {
+  background: var(--card-bg);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.value-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.value-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Project Story */
+.project-story {
+  padding: 6rem 0;
+}
+
+.story-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.story-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.story-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.story-content strong {
+  color: var(--primary-color);
+}
+
+/* Team Section */
+.team-section {
+  padding: 6rem 0;
+  background: rgba(0, 200, 83, 0.02);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.team-card {
+  background: var(--card-bg);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  box-shadow: 0 15px 40px var(--card-shadow);
+}
+
+.team-avatar {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--primary-color);
+}
+
+.team-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.role {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.team-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.team-links a {
+  width: 40px;
+  height: 40px;
+  background: var(--primary-color);
+  color: var(--dark-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.team-links a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 20px var(--primary-shadow);
+}
+
+.contributors-note {
+  text-align: center;
+  padding: 3rem;
+  background: var(--card-bg);
+  border-radius: 15px;
+  border: 2px dashed var(--primary-color);
+}
+
+.contributors-note p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.btn-contributors {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--primary-color);
+  color: var(--dark-bg);
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-contributors:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px var(--primary-shadow);
+}
+
+/* GSSoC Section */
+.gssoc-section {
+  padding: 6rem 0;
+}
+
+.gssoc-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--card-bg);
+  padding: 4rem 3rem;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.gssoc-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.gssoc-content > p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+}
+
+.gssoc-stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.gssoc-stats .stat {
+  text-align: center;
+}
+
+.gssoc-stats .stat h3 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.gssoc-stats .stat p {
+  color: var(--text-secondary);
+}
+
+/* Footer */
+.footer {
+  background: var(--card-bg);
+  padding: 3rem 2rem;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-content p {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.footer-credits {
+  font-size: 0.9rem;
+}
+
+.footer-credits a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-credits a:hover {
+  color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .values-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gssoc-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .gssoc-content h2 {
+    font-size: 2rem;
+  }
+}
