@@ -171,6 +171,35 @@ Current emergency solutions in tourist areas are often slow, fragmented, and dif
 
 <h2 id="project-structure">🗂 Project Structure</h2>
 
+<pre>
+IoT-AI-Public-Safety/
+│
+├── .github/                           # GitHub-specific configuration and automation
+│   ├── ISSUE_TEMPLATE/                # Templates for bug reports and feature requests
+│   ├── workflows/                     # CI/CD workflow files (GitHub Actions)
+│   └── pull_request_template.md       # Template for pull requests
+│
+├── Backend/                           # Backend logic, APIs, and server configuration
+│
+├── Docs/                              # Documentation and references
+│
+├── Frontend/                          # Frontend source code (UI/UX, web components)
+│
+├── Hardware/                          # IoT hardware setup, circuits, and device configurations
+│
+├── .env.example                       # Example environment configuration file
+│
+├── CODE_OF_CONDUCT.md                 # Community guidelines for contributors
+├── CONTRIBUTING.md                    # Instructions for contributing to the project
+├── LICENSE                            # Project license information
+├── README.md                          # Main project documentation
+├── roadmap.md                         # Development roadmap and milestones
+├── setup-guide.md                     # Step-by-step setup and installation guide
+│
+├── GirlScript-Summer-of-Code.png      # GSSoC official logo
+└── gssoc logo.png                     # Additional GSSoC branding/logo
+</pre>
+
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 <h2 id="roadmap">🛣 Roadmap</h2>
