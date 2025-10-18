@@ -171,33 +171,47 @@ Current emergency solutions in tourist areas are often slow, fragmented, and dif
 
 <h2 id="project-structure">🗂 Project Structure</h2>
 
+<p>The IEADS repository is organized into five primary layers: Firmware, Backend, Frontend, Hardware, and Documentation to ensure modularity and scalability.</p>
+
 <pre>
-IoT-AI-Public-Safety/
-│
-├── .github/                           # GitHub-specific configuration and automation
-│   ├── ISSUE_TEMPLATE/                # Templates for bug reports and feature requests
-│   ├── workflows/                     # CI/CD workflow files (GitHub Actions)
-│   └── pull_request_template.md       # Template for pull requests
-│
-├── Backend/                           # Backend logic, APIs, and server configuration
-│
-├── Docs/                              # Documentation and references
-│
-├── Frontend/                          # Frontend source code (UI/UX, web components)
-│
-├── Hardware/                          # IoT hardware setup, circuits, and device configurations
-│
-├── .env.example                       # Example environment configuration file
-│
-├── CODE_OF_CONDUCT.md                 # Community guidelines for contributors
-├── CONTRIBUTING.md                    # Instructions for contributing to the project
-├── LICENSE                            # Project license information
-├── README.md                          # Main project documentation
-├── roadmap.md                         # Development roadmap and milestones
-├── setup-guide.md                     # Step-by-step setup and installation guide
-│
-├── GirlScript-Summer-of-Code.png      # GSSoC official logo
-└── gssoc logo.png                     # Additional GSSoC branding/logo
+/
+├── .github/                   # Configuration for GitHub workflows (CI/CD, auto-labeling, etc.)
+│   ├── ISSUE_TEMPLATE/        # Templates for bug reports and feature requests
+│   └── PULL_REQUEST_TEMPLATE  # Template for pull requests
+|
+├── Backend/                   # Cloud-based logic: Ingestion, AI verification, Dispatch, and Real-time data
+│   ├── ai-verification/       # Python code for AI-driven alert trustworthiness checks
+│   ├── dispatch-service/      # Node.js/Python logic for Nearest Neighbor Search and Twilio API calls
+│   └── database/              # Database interaction and schema definitions (e.g., Firestore connections)
+|
+├── Docs/                      # Comprehensive documentation and guides
+│   ├── Architecture.md        # Detailed system flow and component interaction diagram
+│   └── setup-guide.md         # Step-by-step instructions for installing dependencies and setup
+|
+├── Firmware/                  # Embedded C++ code for the Intelligent Node (ESP32)
+│   └── IEADS_ESP32_Code/      # Main Arduino project folder (PlatformIO/Arduino IDE compatible)
+│       ├── IEADS_main.ino     # Main setup() and loop() functions
+│       └── src/               # Custom class implementations and header files
+│           ├── CommsManager.* # Logic for LoRaWAN/Wi-Fi failover
+│           └── Hardware/      # Pin definitions and hardware configuration
+|
+├── Frontend/                  # Real-time Operations Dashboard (Web UI for officials)
+│   ├── src/                   # Application source code
+│   │   ├── components/        # Reusable UI elements (MapDisplay, AlertFeed)
+│   │   ├── pages/             # Main application views (Dashboard)
+│   │   └── services/          # API and WebSocket connectivity logic
+|
+├── Hardware/                  # Physical hardware documentation
+│   ├── Schematics/            # Wiring diagrams and PCB layouts
+│   └── BOM.md                 # Bill of Materials (List of components required)
+|
+├── .env.example               # Example file for required environment variables (Twilio keys, etc.)
+├── CODE_OF_CONDUCT.md         # Community guidelines
+├── CONTRIBUTING.md            # Detailed instructions for contributing to the project
+├── LICENSE                    # Project license (e.g., MIT)
+├── README.md                  # The main project description
+├── roadmap.md                 # Development roadmap and milestones
+└── GirlScriptSummerofCode.png # Official GSSoC branding assets (if applicable)
 </pre>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
